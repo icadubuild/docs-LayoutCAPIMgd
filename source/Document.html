@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayoutCAPIMgd - Document</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Document</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">LayoutCAPICOMLib.LayoutDocument</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">LODocumentRef</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/layout_c_api/layout/document_8h.html" target="_blank">https://extensions.sketchup.com/developers/layout_c_api/layout/document_8h.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Release</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddReference</b>( <i>Document</i> document ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SaveToFile</b>( <i>String</i> path, <i>LODocumentVersion</i> version ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>ExportToPDF</b>( <i>String</i> path, <i>Dictionary</i> options_dict ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>ExportToImageSet</b>( <i>String</i> export_path, <i>String</i> base_name, <i>LOImageRepOutputFormat</i> format, <i>Dictionary</i> options_dict ) </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetFilePath</b>() </div></div>
+<div class="caller"><div class="returntype">DateTime </div><div class="declaration"><b>GetTimeCreated</b>() </div></div>
+<div class="caller"><div class="returntype">DateTime </div><div class="declaration"><b>GetTimeModified</b>() </div></div>
+<div class="caller"><div class="returntype">DateTime </div><div class="declaration"><b>GetTimePublished</b>() </div></div>
+<div class="caller"><div class="returntype">LODocumentUnits </div><div class="declaration"><b>GetUnits</b>( <i>Double&</i> precision ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetUnits</b>( <i>LODocumentUnits</i> units, <i>Double</i> precision ) </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>GetNumberOfLayers</b>() </div></div>
+<div class="caller"><div class="returntype">Layer </div><div class="declaration"><b>GetLayerAtIndex</b>( <i>Int64</i> index ) </div></div>
+<div class="caller"><div class="returntype">LayerList </div><div class="declaration"><b>GetLayers</b>() </div></div>
+<div class="caller"><div class="returntype">Layer </div><div class="declaration"><b>GetActiveLayer</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetActiveLayer</b>( <i>Layer</i> layer_definition ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>ReorderLayer</b>( <i>Layer</i> layer_definition, <i>Int64</i> new_index ) </div></div>
+<div class="caller"><div class="returntype">Layer </div><div class="declaration"><b>AddLayer</b>( <i>Boolean</i> shared ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemoveLayer</b>( <i>Layer</i> layer_definition, <i>Boolean</i> delete_entities ) </div></div>
+<div class="caller"><div class="returntype">PageInfo </div><div class="declaration"><b>GetPageInfo</b>() </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>GetNumberOfPages</b>() </div></div>
+<div class="caller"><div class="returntype">Page </div><div class="declaration"><b>GetPageAtIndex</b>( <i>Int64</i> index ) </div></div>
+<div class="caller"><div class="returntype">PageList </div><div class="declaration"><b>GetPages</b>() </div></div>
+<div class="caller"><div class="returntype">Page </div><div class="declaration"><b>AddPage</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemovePage</b>( <i>Page</i> page ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>ReorderPage</b>( <i>Page</i> page, <i>Int64</i> new_index ) </div></div>
+<div class="caller"><div class="returntype">Page </div><div class="declaration"><b>GetInitialPage</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetInitialPage</b>( <i>Page</i> page ) </div></div>
+<div class="caller"><div class="returntype">Grid </div><div class="declaration"><b>GetGrid</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetObjectSnap</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetObjectSnap</b>( <i>Boolean</i> object_snap ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetGridSnap</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetGridSnap</b>( <i>Boolean</i> grid_snap ) </div></div>
+<div class="caller"><div class="returntype">LengthFormatter </div><div class="declaration"><b>GetLengthFormatter</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddEntity</b>( <i>Entity</i> entity, <i>Layer</i> layer_definition, <i>Page</i> page ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddEntityUsingIndexes</b>( <i>Entity</i> entity, <i>Int64</i> layer_index, <i>Int64</i> page_index ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemoveEntity</b>( <i>Entity</i> entity ) </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>GetNumberOfSharedEntities</b>() </div></div>
+<div class="caller"><div class="returntype">Entity </div><div class="declaration"><b>GetSharedEntityAtIndex</b>( <i>Int64</i> index ) </div></div>
+<div class="caller"><div class="returntype">EntityList </div><div class="declaration"><b>GetSharedEntities</b>() </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>GetNumberOfAutoTextDefinitions</b>() </div></div>
+<div class="caller"><div class="returntype">AutoTextDefinition </div><div class="declaration"><b>GetAutoTextDefinitionAtIndex</b>( <i>Int64</i> index ) </div></div>
+<div class="caller"><div class="returntype">AutoTextDefinition </div><div class="declaration"><b>GetAutoTextDefinitionByName</b>( <i>String</i> name ) </div></div>
+<div class="caller"><div class="returntype">AutoTextDefinitionList </div><div class="declaration"><b>GetAutoTextDefinitions</b>() </div></div>
+<div class="caller"><div class="returntype">AutoTextDefinition </div><div class="declaration"><b>AddAutoTextDefinition</b>( <i>LOAutoTextDefinitionType</i> type, <i>String</i> name ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemoveAutoTextDefinition</b>( <i>AutoTextDefinition</i> autotext, <i>Boolean</i> convert_tags_to_normal_text ) </div></div>
+<div class="caller"><div class="returntype">Void </div><div class="declaration"><b>Dispose</b>() </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

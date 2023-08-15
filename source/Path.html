@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayoutCAPIMgd - Path</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Path</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">LayoutCAPICOMLib.LayoutPath</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">LOPathRef</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/layout_c_api/layout/path_8h.html" target="_blank">https://extensions.sketchup.com/developers/layout_c_api/layout/path_8h.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Release</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddReference</b>( <i>Path</i> path ) </div></div>
+<div class="caller"><div class="returntype">Entity </div><div class="declaration"><b>PathToEntity</b>() </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>GetNumberOfPoints</b>() </div></div>
+<div class="caller"><div class="returntype">Point2DCollection </div><div class="declaration"><b>GetPoints</b>() </div></div>
+<div class="caller"><div class="returntype">Point2D </div><div class="declaration"><b>GetPointAtIndex</b>( <i>Int64</i> point_index ) </div></div>
+<div class="caller"><div class="returntype">Point2D </div><div class="declaration"><b>GetStartPoint</b>() </div></div>
+<div class="caller"><div class="returntype">Point2D </div><div class="declaration"><b>GetEndPoint</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetClosed</b>() </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetParametricLength</b>() </div></div>
+<div class="caller"><div class="returntype">Point2D </div><div class="declaration"><b>GetPointAtParameter</b>( <i>Double</i> parametric_value ) </div></div>
+<div class="caller"><div class="returntype">Vector2D </div><div class="declaration"><b>GetTangentAtParameter</b>( <i>Double</i> parametric_value ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetCircle</b>( <i>Point2D&</i> center, <i>Double&</i> radius ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetArc</b>( <i>Point2D&</i> center, <i>Double&</i> radius, <i>Double&</i> start_angle, <i>Double&</i> end_angle ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AppendLineTo</b>( <i>Point2D</i> point ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AppendPathTo</b>( <i>Path</i> other_path ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AppendBezierTo</b>( <i>Point2D</i> control_point_1, <i>Point2D</i> control_point_2, <i>Point2D</i> point ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Close</b>() </div></div>
+<div class="caller"><div class="returntype">LOPathWindingType </div><div class="declaration"><b>GetWindingType</b>() </div></div>
+<div class="caller"><div class="returntype">List </div><div class="declaration"><b>GetPointTypes</b>() </div></div>
+<div class="caller"><div class="returntype">LOPathPointType </div><div class="declaration"><b>GetPointTypeAtIndex</b>( <i>Int64</i> point_index ) </div></div>
+<div class="caller"><div class="returntype">Void </div><div class="declaration"><b>Dispose</b>() </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

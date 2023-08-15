@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayoutCAPIMgd - Table</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Table</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">LayoutCAPICOMLib.LayoutTable</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">LOTableRef</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/layout_c_api/layout/table_8h.html" target="_blank">https://extensions.sketchup.com/developers/layout_c_api/layout/table_8h.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Release</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddReference</b>( <i>Table</i> table ) </div></div>
+<div class="caller"><div class="returntype">Entity </div><div class="declaration"><b>TableToEntity</b>() </div></div>
+<div class="caller"><div class="returntype">EntityList </div><div class="declaration"><b>GetExplodedEntities</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>GetDimensions</b>( <i>Int64&</i> rows, <i>Int64&</i> columns ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetRowHeight</b>( <i>Int64</i> index ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetRowHeight</b>( <i>Int64</i> index, <i>Double</i> height ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetColumnWidth</b>( <i>Int64</i> index ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetColumnWidth</b>( <i>Int64</i> index, <i>Double</i> width ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>InsertRow</b>( <i>Int64</i> index ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemoveRow</b>( <i>Int64</i> index ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>InsertColumn</b>( <i>Int64</i> index ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemoveColumn</b>( <i>Int64</i> index ) </div></div>
+<div class="caller"><div class="returntype">FormattedText </div><div class="declaration"><b>CreateCellTextCopy</b>( <i>Int64</i> row, <i>Int64</i> column ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetCellText</b>( <i>Int64</i> row, <i>Int64</i> column, <i>FormattedText</i> text ) </div></div>
+<div class="caller"><div class="returntype">Style </div><div class="declaration"><b>GetBorderStyle</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetBorderStyle</b>( <i>Style</i> style ) </div></div>
+<div class="caller"><div class="returntype">Style </div><div class="declaration"><b>GetRowEdgeStyle</b>( <i>Int64</i> row ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetRowEdgeStyle</b>( <i>Int64</i> row, <i>Style</i> style ) </div></div>
+<div class="caller"><div class="returntype">Style </div><div class="declaration"><b>GetColumnEdgeStyle</b>( <i>Int64</i> column ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetColumnEdgeStyle</b>( <i>Int64</i> column, <i>Style</i> style ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>GetCellSpan</b>( <i>Int64</i> row, <i>Int64</i> column, <i>Int64&</i> row_span, <i>Int64&</i> column_span ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>MergeCells</b>( <i>Int64</i> start_row, <i>Int64</i> start_column, <i>Int64</i> end_row, <i>Int64</i> end_column ) </div></div>
+<div class="caller"><div class="returntype">LOTableCellRotation </div><div class="declaration"><b>GetCellRotation</b>( <i>Int64</i> row, <i>Int64</i> column ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetCellRotation</b>( <i>Int64</i> row, <i>Int64</i> column, <i>LOTableCellRotation</i> rotation ) </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

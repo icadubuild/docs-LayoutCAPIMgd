@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayoutCAPIMgd - Application</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Application</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">LayoutCAPICOMLib.LayoutApplication</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">None</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/layout_c_api/layout/index.html" target="_blank">https://extensions.sketchup.com/developers/layout_c_api/layout/index.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">Void </div><div class="declaration"><b>Dispose</b>() </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>ErrorName</b>( <i>SUResult</i> suResultCode ) </div></div>
+<div class="caller"><div class="returntype">String <em>[static]</em></div><div class="declaration"><b>getErrorName</b>( <i>SUResult</i> suResultCode ) </div></div>
+<div class="caller"><div class="returntype">Document </div><div class="declaration"><b>CreateDocumentEmpty</b>() </div></div>
+<div class="caller"><div class="returntype">Document </div><div class="declaration"><b>CreateDocumentFromFile</b>( <i>String</i> path ) </div></div>
+<div class="caller"><div class="returntype">Document </div><div class="declaration"><b>CreateDocumentFromTemplate</b>( <i>String</i> path ) </div></div>
+<div class="caller"><div class="returntype">Dictionary </div><div class="declaration"><b>CreateDictionary</b>() </div></div>
+<div class="caller"><div class="returntype">EntityList </div><div class="declaration"><b>CreateEntityList</b>() </div></div>
+<div class="caller"><div class="returntype">PageList </div><div class="declaration"><b>CreatePageList</b>() </div></div>
+<div class="caller"><div class="returntype">LayerList </div><div class="declaration"><b>CreateLayerList</b>() </div></div>
+<div class="caller"><div class="returntype">AutoTextDefinitionList </div><div class="declaration"><b>CreateAutoTextDefinitionListList</b>() </div></div>
+<div class="caller"><div class="returntype">TypedValue </div><div class="declaration"><b>CreateTypedValue</b>() </div></div>
+<div class="caller"><div class="returntype">Group </div><div class="declaration"><b>CreateGroup</b>( <i>EntityList</i> entity_list ) </div></div>
+<div class="caller"><div class="returntype">ConnectionPoint </div><div class="declaration"><b>CreateConnectionPoint</b>( <i>Entity</i> entity, <i>Point2D</i> point, <i>Double</i> aperture ) </div></div>
+<div class="caller"><div class="returntype">ConnectionPoint </div><div class="declaration"><b>CreateConnectionPointFromPoint3D</b>( <i>SketchUpModel</i> model, <i>Point3D</i> point3d ) </div></div>
+<div class="caller"><div class="returntype">ConnectionPoint </div><div class="declaration"><b>CreateConnectionPointFromPID</b>( <i>SketchUpModel</i> model, <i>Point3D</i> point3d, <i>String</i> persistent_id ) </div></div>
+<div class="caller"><div class="returntype">Ellipse </div><div class="declaration"><b>CreateEllipse</b>( <i>AxisAlignedRect2D</i> bounds ) </div></div>
+<div class="caller"><div class="returntype">Rectangle </div><div class="declaration"><b>CreateRectangle</b>( <i>AxisAlignedRect2D</i> bounds ) </div></div>
+<div class="caller"><div class="returntype">Rectangle </div><div class="declaration"><b>CreateRectangleRounded</b>( <i>AxisAlignedRect2D</i> bounds, <i>Double</i> corner_radius ) </div></div>
+<div class="caller"><div class="returntype">Rectangle </div><div class="declaration"><b>CreateRectangleLozenge</b>( <i>AxisAlignedRect2D</i> bounds ) </div></div>
+<div class="caller"><div class="returntype">Rectangle </div><div class="declaration"><b>CreateRectangleBulged</b>( <i>AxisAlignedRect2D</i> bounds, <i>Double</i> bulge_distance ) </div></div>
+<div class="caller"><div class="returntype">FormattedText </div><div class="declaration"><b>CreateFormattedTextAtPoint</b>( <i>Point2D</i> anchor_point, <i>LOFormattedTextAnchorType</i> anchor_type, <i>String</i> plain_text ) </div></div>
+<div class="caller"><div class="returntype">FormattedText </div><div class="declaration"><b>CreateFormattedTextWithBounds</b>( <i>AxisAlignedRect2D</i> bounds, <i>String</i> plain_text ) </div></div>
+<div class="caller"><div class="returntype">FormattedText </div><div class="declaration"><b>CreateFormattedTextAtPointFromFile</b>( <i>Point2D</i> anchor_point, <i>LOFormattedTextAnchorType</i> anchor_type, <i>String</i> path ) </div></div>
+<div class="caller"><div class="returntype">FormattedText </div><div class="declaration"><b>CreateFormattedTextWithBoundsFromFile</b>( <i>AxisAlignedRect2D</i> bounds, <i>String</i> path ) </div></div>
+<div class="caller"><div class="returntype">Image </div><div class="declaration"><b>CreateImageFromFile</b>( <i>AxisAlignedRect2D</i> bounds, <i>String</i> file_path ) </div></div>
+<div class="caller"><div class="returntype">Table </div><div class="declaration"><b>CreateTable</b>( <i>AxisAlignedRect2D</i> bounds, <i>Int64</i> rows, <i>Int64</i> columns ) </div></div>
+<div class="caller"><div class="returntype">Label </div><div class="declaration"><b>CreateLabelAtPoint</b>( <i>Point2D</i> anchor_point, <i>LOFormattedTextAnchorType</i> anchor_type, <i>String</i> plain_text, <i>LOLabelLeaderLineType</i> leader_line_type, <i>Point2D</i> target_point ) </div></div>
+<div class="caller"><div class="returntype">Label </div><div class="declaration"><b>CreateLabelWithBounds</b>( <i>AxisAlignedRect2D</i> bounds, <i>String</i> plain_text, <i>LOLabelLeaderLineType</i> leader_line_type, <i>Point2D</i> target_point ) </div></div>
+<div class="caller"><div class="returntype">Path </div><div class="declaration"><b>CreatePath</b>( <i>Point2D</i> start_point, <i>Point2D</i> end_point ) </div></div>
+<div class="caller"><div class="returntype">Path </div><div class="declaration"><b>CreatePathBezier</b>( <i>Point2D</i> start_point, <i>Point2D</i> control_point_1, <i>Point2D</i> control_point_2, <i>Point2D</i> end_point ) </div></div>
+<div class="caller"><div class="returntype">Path </div><div class="declaration"><b>CreatePathFromRectangle</b>( <i>Rectangle</i> rectangle ) </div></div>
+<div class="caller"><div class="returntype">Path </div><div class="declaration"><b>CreatePathFromEllipse</b>( <i>Ellipse</i> ellipse ) </div></div>
+<div class="caller"><div class="returntype">Path </div><div class="declaration"><b>CreatePathArc</b>( <i>Point2D</i> center_point, <i>Double</i> radius, <i>Double</i> start_angle, <i>Double</i> end_angle ) </div></div>
+<div class="caller"><div class="returntype">Path </div><div class="declaration"><b>CreatePathFromStartArrow</b>( <i>Path</i> sourcepath ) </div></div>
+<div class="caller"><div class="returntype">Path </div><div class="declaration"><b>CreatePathFromEndArrow</b>( <i>Path</i> sourcepath ) </div></div>
+<div class="caller"><div class="returntype">SketchUpModel </div><div class="declaration"><b>CreateSketchUpModel</b>( <i>String</i> path, <i>AxisAlignedRect2D</i> bounds ) </div></div>
+<div class="caller"><div class="returntype">LinearDimension </div><div class="declaration"><b>CreateLinearDimension</b>( <i>Point2D</i> start_point, <i>Point2D</i> end_point, <i>Double</i> height ) </div></div>
+<div class="caller"><div class="returntype">AngularDimension </div><div class="declaration"><b>CreateAngularDimension</b>( <i>Point2D</i> start_point, <i>Point2D</i> end_point, <i>Point2D</i> start_extent_point, <i>Point2D</i> end_extent_point, <i>Boolean</i> inner_angle ) </div></div>
+<div class="caller"><div class="returntype">Style </div><div class="declaration"><b>CreateStyle</b>() </div></div>
+<div class="caller"><div class="returntype">Group </div><div class="declaration"><b>GroupFromEntity</b>( <i>Entity</i> entity ) </div></div>
+<div class="caller"><div class="returntype">Ellipse </div><div class="declaration"><b>EllipseFromEntity</b>( <i>Entity</i> entity ) </div></div>
+<div class="caller"><div class="returntype">Rectangle </div><div class="declaration"><b>RectangleFromEntity</b>( <i>Entity</i> entity ) </div></div>
+<div class="caller"><div class="returntype">FormattedText </div><div class="declaration"><b>FormattedTextFromEntity</b>( <i>Entity</i> entity ) </div></div>
+<div class="caller"><div class="returntype">Image </div><div class="declaration"><b>ImageFromEntity</b>( <i>Entity</i> entity ) </div></div>
+<div class="caller"><div class="returntype">Table </div><div class="declaration"><b>TableFromEntity</b>( <i>Entity</i> entity ) </div></div>
+<div class="caller"><div class="returntype">Label </div><div class="declaration"><b>LabelFromEntity</b>( <i>Entity</i> entity ) </div></div>
+<div class="caller"><div class="returntype">Path </div><div class="declaration"><b>PathFromEntity</b>( <i>Entity</i> entity ) </div></div>
+<div class="caller"><div class="returntype">SketchUpModel </div><div class="declaration"><b>SketchUpModelFromEntity</b>( <i>Entity</i> entity ) </div></div>
+<div class="caller"><div class="returntype">LinearDimension </div><div class="declaration"><b>LinearDimensionFromEntity</b>( <i>Entity</i> entity ) </div></div>
+<div class="caller"><div class="returntype">AngularDimension </div><div class="declaration"><b>AngularDimensionFromEntity</b>( <i>Entity</i> entity ) </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">String</div><div class="declaration">ErrorMessage</div><div class="operations">[Get]</div></div>
+<div class="caller"><div class="returntype">SUResult</div><div class="declaration">ErrorCode</div><div class="operations">[Get]</div></div>
+<div class="caller"><div class="returntype">String</div><div class="declaration">ErrorCodeName</div><div class="operations">[Get]</div></div>
+
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

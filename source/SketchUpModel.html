@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayoutCAPIMgd - SketchUpModel</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">SketchUpModel</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">LayoutCAPICOMLib.LayoutSketchUpModel</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">LOSketchUpModelRef</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/layout_c_api/layout/sketchupmodel_8h.html" target="_blank">https://extensions.sketchup.com/developers/layout_c_api/layout/sketchupmodel_8h.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Release</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddReference</b>( <i>SketchUpModel</i> model ) </div></div>
+<div class="caller"><div class="returntype">Entity </div><div class="declaration"><b>SketchUpModelToEntity</b>() </div></div>
+<div class="caller"><div class="returntype">LOSketchUpModelRenderMode </div><div class="declaration"><b>GetRenderMode</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetRenderMode</b>( <i>LOSketchUpModelRenderMode</i> render_mode ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Render</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsRenderNeeded</b>() </div></div>
+<div class="caller"><div class="returntype">List </div><div class="declaration"><b>GetAvailableScenes</b>() </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>GetCurrentScene</b>( <i>Boolean&</i> scene_modified ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetCurrentScene</b>( <i>Int64</i> scene_index ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>ResetCamera</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>ResetEffects</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>ResetStyle</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>ResetLayers</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetCameraModified</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetEffectsModified</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetStyleModified</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetLayersModified</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetDisplayBackground</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetDisplayBackground</b>( <i>Boolean</i> display_background ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetLineWeight</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetLineWeight</b>( <i>Double</i> line_weight ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetDashScale</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetDashScale</b>( <i>Double</i> dash_scale ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetPerspective</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetPerspective</b>( <i>Boolean</i> perspective ) </div></div>
+<div class="caller"><div class="returntype">LOSketchUpModelStandardView </div><div class="declaration"><b>GetStandardView</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetStandardView</b>( <i>LOSketchUpModelStandardView</i> view ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetScale</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetScale</b>( <i>Double</i> scale ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetPreserveScaleOnResize</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetPreserveScaleOnResize</b>( <i>Boolean</i> preserve_scale ) </div></div>
+<div class="caller"><div class="returntype">Entity </div><div class="declaration"><b>GetClipMask</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetClipMask</b>( <i>Entity</i> clip_mask ) </div></div>
+<div class="caller"><div class="returntype">Point2D </div><div class="declaration"><b>ConvertModelPointToPaperPoint</b>( <i>Point3D</i> model_point ) </div></div>
+<div class="caller"><div class="returntype">EntityList </div><div class="declaration"><b>GetExplodedEntities</b>() </div></div>
+<div class="caller"><div class="returntype">Void </div><div class="declaration"><b>Dispose</b>() </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

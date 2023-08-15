@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayoutCAPIMgd - Style</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Style</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">LayoutCAPICOMLib.LayoutStyle</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">LOStyleRef</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/layout_c_api/layout/style_8h.html" target="_blank">https://extensions.sketchup.com/developers/layout_c_api/layout/style_8h.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Release</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>CopyFrom</b>( <i>Style</i> src_style ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetStroked</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetStroked</b>( <i>Boolean</i> is_stroked ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetStrokeWidth</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetStrokeWidth</b>( <i>Double</i> stroke_width ) </div></div>
+<div class="caller"><div class="returntype">Color </div><div class="declaration"><b>GetStrokeColor</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetStrokeColor</b>( <i>Color</i> stroke_color ) </div></div>
+<div class="caller"><div class="returntype">LOStrokeJoinStyle </div><div class="declaration"><b>GetStrokeJoinStyle</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetStrokeJoinStyle</b>( <i>LOStrokeJoinStyle</i> join_type ) </div></div>
+<div class="caller"><div class="returntype">LOStrokeCapStyle </div><div class="declaration"><b>GetStrokeCapStyle</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetStrokeCapStyle</b>( <i>LOStrokeCapStyle</i> cap_type ) </div></div>
+<div class="caller"><div class="returntype">LOStrokePattern </div><div class="declaration"><b>GetStrokePattern</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetStrokePattern</b>( <i>LOStrokePattern</i> stroke_pattern ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetStrokePatternScale</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetStrokePatternScale</b>( <i>Double</i> pattern_scale ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetSolidFilled</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetSolidFilled</b>( <i>Boolean</i> solid_filled ) </div></div>
+<div class="caller"><div class="returntype">Color </div><div class="declaration"><b>GetSolidFillColor</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetSolidFillColor</b>( <i>Color</i> fill_color ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetPatternFilled</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetPatternFilled</b>( <i>Boolean</i> pattern_filled ) </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetPatternFillImagePath</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetPatternFillImagePath</b>( <i>String</i> image_path ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetPatternFillRotation</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetPatternFillRotation</b>( <i>Double</i> rotation ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetPatternFillScale</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetPatternFillScale</b>( <i>Double</i> scale ) </div></div>
+<div class="caller"><div class="returntype">Point2D </div><div class="declaration"><b>GetPatternFillOrigin</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetPatternFillOrigin</b>( <i>Point2D</i> origin ) </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetTextFontFamily</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetTextFontFamily</b>( <i>String</i> family ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetTextBold</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetTextBold</b>( <i>Boolean</i> is_bold ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetTextItalic</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetTextItalic</b>( <i>Boolean</i> is_italic ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetFontSize</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetFontSize</b>( <i>Double</i> size_in_points ) </div></div>
+<div class="caller"><div class="returntype">Color </div><div class="declaration"><b>GetTextColor</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetTextColor</b>( <i>Color</i> color ) </div></div>
+<div class="caller"><div class="returntype">LOTextUnderline </div><div class="declaration"><b>GetTextUnderline</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetTextUnderline</b>( <i>LOTextUnderline</i> underline_type ) </div></div>
+<div class="caller"><div class="returntype">LOTextElevation </div><div class="declaration"><b>GetTextElevation</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetTextElevation</b>( <i>LOTextElevation</i> elevation_type ) </div></div>
+<div class="caller"><div class="returntype">LOTextAlignment </div><div class="declaration"><b>GetTextAlignment</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetTextAlignment</b>( <i>LOTextAlignment</i> alignment_type ) </div></div>
+<div class="caller"><div class="returntype">LOTextAnchor </div><div class="declaration"><b>GetTextAnchor</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetTextAnchor</b>( <i>LOTextAnchor</i> anchor_type ) </div></div>
+<div class="caller"><div class="returntype">LODimensionRotationAlignment </div><div class="declaration"><b>GetDimensionRotationAlignment</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetDimensionRotationAlignment</b>( <i>LODimensionRotationAlignment</i> alignment ) </div></div>
+<div class="caller"><div class="returntype">LODimensionVerticalAlignment </div><div class="declaration"><b>GetDimensionVerticalAlignment</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetDimensionVerticalAlignment</b>( <i>LODimensionVerticalAlignment</i> alignment ) </div></div>
+<div class="caller"><div class="returntype">LODimensionUnits </div><div class="declaration"><b>GetDimensionUnits</b>( <i>Double&</i> precision ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetDimensionUnits</b>( <i>LODimensionUnits</i> units, <i>Double</i> precision ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetSuppressDimensionUnits</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetSuppressDimensionUnits</b>( <i>Boolean</i> is_suppressed ) </div></div>
+<div class="caller"><div class="returntype">LOArrowType </div><div class="declaration"><b>GetStartArrowType</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetStartArrowType</b>( <i>LOArrowType</i> type ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetStartArrowSize</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetStartArrowSize</b>( <i>Double</i> size ) </div></div>
+<div class="caller"><div class="returntype">LOArrowType </div><div class="declaration"><b>GetEndArrowType</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetEndArrowType</b>( <i>LOArrowType</i> type ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetEndArrowSize</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetEndArrowSize</b>( <i>Double</i> size ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsArrowTypeFilled</b>( <i>LOArrowType</i> type ) </div></div>
+<div class="caller"><div class="returntype">Style </div><div class="declaration"><b>GetSubEntityStyle</b>( <i>LOSubEntityType</i> type ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetSubEntityStyle</b>( <i>LOSubEntityType</i> type, <i>Style</i> sub_style ) </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>StrokePatternGetMaximumNumberOfWidths</b>() </div></div>
+<div class="caller"><div class="returntype">List </div><div class="declaration"><b>StrokePatternGetWidths</b>( <i>LOStrokePattern</i> stroke_pattern ) </div></div>
+<div class="caller"><div class="returntype">Void </div><div class="declaration"><b>Dispose</b>() </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>
